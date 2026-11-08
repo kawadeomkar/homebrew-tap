@@ -16,6 +16,13 @@ class Duscope < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/kawadeomkar/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "82ae1121b0bda5ef0db93ee68f72cff460b315da69c7996a40f5bd584654bd43"
+    sha256 cellar: :any,                 x86_64_linux: "8bef6446f95e248e13c95572d867c764ad2b4bdfbaf79c9fcf7101cb317ccf9b"
+  end
+
   depends_on "rust" => :build
   deny_network_access!
 
