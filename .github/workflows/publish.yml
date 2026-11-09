@@ -38,6 +38,15 @@ jobs:
         id: git_setup
         uses: Homebrew/actions/git-user-config@d482da0e602890d3160aade42e72c8556103bf04 # 2026.10.26.1
 
+      # The ruleset on main requires verified signatures. git-user-config
+      # commits as the account that dispatched this workflow, and this signs
+      # what `brew pr-pull` commits with that account's SSH signing key
+      # (TAP_SIGNING_KEY), so the push below is accepted.
+      - name: Set up commit signing
+        uses: Homebrew/actions/setup-commit-signing@d482da0e602890d3160aade42e72c8556103bf04 # 2026.10.26.1
+        with:
+          signing_key: ${{ secrets.TAP_SIGNING_KEY }}
+
       - name: Pull bottles
         id: pull_bottles
         env:
