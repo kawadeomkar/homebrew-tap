@@ -18,8 +18,8 @@ class Duscope < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/kawadeomkar/tap"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "5eae1703c07fa75cc00c240e87894ee73872a36813d421b7e226e5c3b449907a"
-    sha256 cellar: :any,                 x86_64_linux: "017ee75a862d8c1f4a7f074cd4e0eb628d2930437756bcf652b1ac4de1a84965"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "4bd72f84e74d999e79a484c144c9b26c23424aa7207f540b0c0b022b0d1fc974"
+    sha256 cellar: :any,                 x86_64_linux: "b8ab89d1e9407d806770bfbe8d646d9afe9291133fdd0af4520671fd6b281745"
   end
 
   depends_on "rust" => :build
