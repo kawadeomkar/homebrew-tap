@@ -6,8 +6,8 @@
 class Duscope < Formula
   desc "Fast, queryable disk-usage analyzer with JSON output"
   homepage "https://github.com/kawadeomkar/duscope"
-  url "https://github.com/kawadeomkar/duscope/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "fdfd8bb3dc63ceddcf3791703a901da8f84eee36491075527bd4e2fb7ac03449"
+  url "https://github.com/kawadeomkar/duscope/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "d8b60f0d78a48311336460236bfcce81dc43313608888aeb37f95330a8d97cac"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/kawadeomkar/duscope.git", branch: "main"
 
